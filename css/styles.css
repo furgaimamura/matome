@@ -1,0 +1,109 @@
+/* common */
+
+:root {
+  --programing-study: 40;
+  --codeing-completement: 100;
+  --programing-others: 200;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  line-height: 24px;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 16px;
+  border-left: 8px solid chocolate;
+  border-bottom: 2px solid #bbb;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.container {
+  margin: 0 8px;
+}
+
+/* main */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main .container {
+  margin-top: 12px;
+}
+
+main a::before {
+  content: "・";
+}
+
+main h1 {
+  font-size: 28px;
+  line-height: 40px;
+  background: rgb(240, 240, 240);
+}
+
+/* programing */
+
+.programing .container {
+  margin: 0 32px 16px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.programing h2 {
+  text-align: center;
+}
+
+.programing section {
+  margin-top: 8px;
+}
+
+.programing .programing-study a {
+  background: hsla(var(--programing-study), 74%, 47%, 0.2);
+  padding: 0 8px;
+}
+
+.programing .programing-study h2 {
+  background: hsla(var(--programing-study), 74%, 47%, 0.9);
+  padding: 0 8px;
+}
+
+.programing .codeing-completement a {
+  background: hsla(var(--codeing-completement), 74%, 47%, 0.2);
+  padding: 0 8px;
+}
+
+.programing .codeing-completement h2 {
+  background: hsla(var(--codeing-completement), 74%, 47%, 0.9);
+  padding: 0 8px;
+}
+
+.programing .programing-others a {
+  background: hsla(var(--programing-others), 74%, 47%, 0.2);
+  padding: 0 8px;
+}
+
+.programing .programing-others h2 {
+  background: hsla(var(--programing-others), 74%, 47%, 0.9);
+  padding: 0 8px;
+}
